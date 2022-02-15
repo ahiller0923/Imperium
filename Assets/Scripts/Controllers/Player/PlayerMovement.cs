@@ -32,9 +32,9 @@ public class PlayerMovement : MonoBehaviour
 
             if(!EventSystem.current.IsPointerOverGameObject())
             {
-                FindObjectOfType<DialogueManager>().EndDialogue();
                 if (hit.collider == null)
                 {
+                    DialogueManager.GetInstance().ExitDialogueMode();
                     movement.SetTarget(clickPoint);
                 }
 
