@@ -8,12 +8,13 @@ public class MovementComponent : MonoBehaviour
     private Vector3 targetPosition;
     private Animator animator;
 
-    public float speed = 1;
+    private float speed;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         targetPosition = transform.position;
+        speed = GetComponent<Stats>().moveSpeed;
     }
 
     // Update is called once per frame
