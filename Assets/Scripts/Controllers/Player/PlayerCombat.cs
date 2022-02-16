@@ -10,24 +10,29 @@ public class PlayerCombat : MonoBehaviour
     private float shotTime = 0;
     private Animator animator;
     private Vector3 target;
-    public float damage = 50;
+    public float baseDamage = 20;
+    private float dexImpact;
+
+    private Stats playerStats;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         target = transform.position;
+        playerStats = GetComponent<Stats>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Attack(RaycastHit2D hit)
     {
         if (Time.time - shotTime > attackDelay)
         {
+            dexImpact = 1 + (.01f * playerStats.dexterity);
             target = hit.transform.position;
             PlayAnimation(target);
             shotTime = Time.time;
@@ -59,6 +64,6 @@ public class PlayerCombat : MonoBehaviour
         arrow = Instantiate(projectileModel, transform.position, Quaternion.identity);
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), arrow.GetComponent<Collider2D>());
         arrow.GetComponent<ProjectileTargetting>().SetTarget(target);
-        arrow.GetComponent<ProjectileTargetting>().SetDamage(damage);
+        arrow.GetComponent<ProjectileTargetting>().SetDamage(baseDamage * dexImpact);
     }
 }

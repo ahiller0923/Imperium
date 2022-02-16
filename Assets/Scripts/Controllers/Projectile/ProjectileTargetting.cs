@@ -37,7 +37,7 @@ public class ProjectileTargetting : MonoBehaviour
     {
         if(collision.collider.CompareTag("Enemy"))
         {
-            collision.collider.gameObject.GetComponent<HealthComponent>().health -= damage;
+            collision.collider.gameObject.GetComponent<HealthComponent>().TakeDamage(damage);
         }
         Destroy(gameObject);
     }
