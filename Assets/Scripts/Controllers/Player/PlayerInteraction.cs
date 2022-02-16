@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     private PlayerCombat combat;
-    public RaycastHit2D target;
+    private PlayerDialogue dialogue;
 
     void Start()
     {
         combat = GetComponent<PlayerCombat>();
+        dialogue = GetComponent<PlayerDialogue>();
     }
 
     // Update is called once per frame
@@ -20,10 +21,14 @@ public class PlayerInteraction : MonoBehaviour
 
     public void ProcessInteraction(RaycastHit2D hit)
     {
-        if(hit.collider.CompareTag("Enemy"))
+        if (hit.collider.CompareTag("Enemy"))
         {
-            target = hit;
             combat.Attack(hit);
+        }
+
+        else if(hit.collider.CompareTag("Docile"))
+        {
+            dialogue.InitiateDialogue(hit);
         }
     }
 }

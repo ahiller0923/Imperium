@@ -10,6 +10,7 @@ public class PlayerCombat : MonoBehaviour
     private float shotTime = 0;
     private Animator animator;
     private Vector3 target;
+    public float damage = 50;
 
     void Start()
     {
@@ -58,6 +59,6 @@ public class PlayerCombat : MonoBehaviour
         arrow = Instantiate(projectileModel, transform.position, Quaternion.identity);
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), arrow.GetComponent<Collider2D>());
         arrow.GetComponent<ProjectileTargetting>().SetTarget(target);
-        arrow.GetComponent<ProjectileTargetting>().SetDamage(50);
+        arrow.GetComponent<ProjectileTargetting>().SetDamage(damage);
     }
 }
