@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private PlayerCombat combat;
+    private Combat combat;
     private PlayerDialogue dialogue;
 
     void Start()
     {
-        combat = GetComponent<PlayerCombat>();
+        combat = GetComponent<Combat>();
         dialogue = GetComponent<PlayerDialogue>();
     }
 
@@ -23,7 +23,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (hit.collider.CompareTag("Enemy"))
         {
-            combat.Attack(hit);
+            combat.Attack(hit.transform.position);
         }
 
         else if(hit.collider.CompareTag("Docile"))
