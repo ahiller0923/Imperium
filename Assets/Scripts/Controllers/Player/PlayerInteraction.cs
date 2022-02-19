@@ -23,7 +23,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (hit.collider.CompareTag("Enemy"))
         {
-            combat.Attack(hit.transform.position);
+            combat.RangedAttack(hit.transform.position);
         }
 
         else if(hit.collider.CompareTag("Docile"))

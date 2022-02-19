@@ -38,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
         {
             if(isRanged)
             {
-                combat.Attack(playerPos);
+                combat.RangedAttack(playerPos);
             }
             else
             {
