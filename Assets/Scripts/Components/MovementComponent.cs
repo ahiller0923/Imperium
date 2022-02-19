@@ -7,6 +7,7 @@ public class MovementComponent : MonoBehaviour
     // Start is called before the first frame update
     private Vector3 targetPosition;
     private Animator animator;
+    public bool isFlipped;
 
     public float speed = 1;
 
@@ -32,14 +33,20 @@ public class MovementComponent : MonoBehaviour
     {
         if (transform.position.x - target.x < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<SpriteRenderer>().flipX = !isFlipped;
         }
         else
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = isFlipped;
         }
     }
 
+    /* Animation States
+     * 0 - Idle
+     * 1 - Walk Up
+     * 2 - Walk Down
+     * 3 - Walk Side
+     * */
     private void SetAnimations()
     {
         if(transform.position == targetPosition)
@@ -51,33 +58,26 @@ public class MovementComponent : MonoBehaviour
 
             SetAlignment(targetPosition);
 
-            animator.SetBool("walkingUp", false);
-            animator.SetBool("walkingDown", false);
-            animator.SetBool("walkingSide", true);
+            animator.SetInteger("AnimState", 3);
         }
 
         else
         {
-            animator.SetBool("walkingSide", false);
 
             if (transform.position.y - targetPosition.y < 0)
             {
-                animator.SetBool("walkingUp", true);
-                animator.SetBool("walkingDown", false);
+                animator.SetInteger("AnimState", 1);
             }
             else
             {
-                animator.SetBool("walkingDown", true);
-                animator.SetBool("walkingUp", false);
+                animator.SetInteger("AnimState", 2);
             }
         }
     }
 
     private void TurnOffMovementAnimations()
     {
-        animator.SetBool("walkingUp", false);
-        animator.SetBool("walkingDown", false);
-        animator.SetBool("walkingSide", false);
+        animator.SetInteger("AnimState", 0);
     }
 
     public void SetTarget(Vector3 target)

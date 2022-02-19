@@ -30,14 +30,18 @@ public class ProjectileTargetting : MonoBehaviour
 
     private void Move()
     {
+        if(targetPosition == transform.position)
+        {
+            Destroy(gameObject);
+        }
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.CompareTag("Enemy"))
+        if(collision.collider.gameObject.TryGetComponent<HealthComponent>(out HealthComponent otherHealth))
         {
-            collision.collider.gameObject.GetComponent<HealthComponent>().health -= damage;
+            otherHealth.TakeDamage(damage);
         }
         Destroy(gameObject);
     }
@@ -45,5 +49,10 @@ public class ProjectileTargetting : MonoBehaviour
     public void SetDamage(float dmg)
     {
         damage = dmg;
+    }
+
+    public void SetSpeed(float spd)
+    {
+        speed = spd;
     }
 }
