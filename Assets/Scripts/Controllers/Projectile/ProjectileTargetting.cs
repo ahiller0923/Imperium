@@ -6,7 +6,8 @@ public class ProjectileTargetting : MonoBehaviour
 {
     public float speed = 10;
     private Vector3 targetPosition;
-    private float damage = 0;
+    private float physicalDamage = 0;
+    private float magicDamage = 0;
 
     void Start()
     {
@@ -41,14 +42,19 @@ public class ProjectileTargetting : MonoBehaviour
     {
         if(collision.collider.gameObject.TryGetComponent<HealthComponent>(out HealthComponent otherHealth))
         {
-            otherHealth.TakeDamage(damage);
+            otherHealth.TakeDamage(physicalDamage, magicDamage);
         }
         Destroy(gameObject);
     }
 
-    public void SetDamage(float dmg)
+    public void SetPhysicalDamage(float dmg)
     {
-        damage = dmg;
+        physicalDamage = dmg;
+    }
+
+    public void SetMagicDamage(float dmg)
+    {
+        magicDamage = dmg;
     }
 
     public void SetSpeed(float spd)
