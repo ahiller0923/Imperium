@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerInteraction interact;
 
     public Texture2D cursorTexture;
+    public Texture2D attackCursor;
 
     RaycastHit2D hit;
     Vector3 clickPoint;
@@ -20,17 +21,37 @@ public class PlayerMovement : MonoBehaviour
         movement = GetComponent<MovementComponent>();
         interact = GetComponent<PlayerInteraction>();
         GetComponent<Animator>().SetBool("attackOnce", true);
-        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
     }
 
     void Update()
     {
-        if(Mouse.current.leftButton.isPressed)
-        {
-            clickPoint = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            hit = Physics2D.Raycast(clickPoint, Vector2.zero);
+        clickPoint = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        hit = Physics2D.Raycast(clickPoint, Vector2.zero);
 
-            if(!EventSystem.current.IsPointerOverGameObject())
+        if (Keyboard.current.ctrlKey.isPressed)
+        {
+            if (hit.collider != null)
+            {
+                Cursor.SetCursor(attackCursor, Vector2.zero, CursorMode.Auto);
+
+                if(Mouse.current.leftButton.isPressed)
+                {
+                    hit.collider.gameObject.tag = "Enemy";
+                    interactWithNpc();
+                }
+            }
+
+            else
+            {
+                Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+            }
+        }
+
+        else if (Mouse.current.leftButton.isPressed)
+        {
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+
+            if (!EventSystem.current.IsPointerOverGameObject())
             {
                 if (hit.collider == null)
                 {
@@ -40,12 +61,21 @@ public class PlayerMovement : MonoBehaviour
 
                 else
                 {
-                    movement.SetTarget(transform.position);
-                    movement.SetAlignment(hit.transform.position);
-                    interact.ProcessInteraction(hit);
+                    interactWithNpc();
                 }
             }
-            
         }
+
+        else
+        {
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        }
+    }
+
+    private void interactWithNpc()
+    {
+        movement.SetTarget(transform.position);
+        movement.SetAlignment(hit.transform.position);
+        interact.ProcessInteraction(hit);
     }
 }

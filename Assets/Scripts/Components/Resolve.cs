@@ -9,7 +9,8 @@ public class Resolve : MonoBehaviour
     private Combat combat;
     private NpcTargeting targetting;
     private float resolve;
-    private bool isEnemy = false;
+    public bool isEnemy = false;
+    public float enemyThreshold = 55;
 
     private void Start()
     {
@@ -21,9 +22,8 @@ public class Resolve : MonoBehaviour
 
     private void Update()
     {
-        isEnemy = false; 
 
-        if(CheckAlignment().Count == 0)
+        if(CheckAlignment().Count == 0 && !isEnemy)
         {
             targetting.enabled = false;
             combat.enabled = false;
@@ -55,12 +55,11 @@ public class Resolve : MonoBehaviour
         foreach (Collider2D obj in Physics2D.OverlapCircleAll(transform.position, 20f)) {
             if(obj.gameObject.TryGetComponent(out Stats stats))
             {
-                if (Mathf.Abs(resolve - stats.resolve) > 50 && (Vector3.Distance(transform.position, obj.transform.position) < combat.agroRange))
+                if (Mathf.Abs(resolve - stats.resolve) > enemyThreshold && (Vector3.Distance(transform.position, obj.transform.position) < combat.agroRange))
                 {
                     if(obj.gameObject.TryGetComponent<PlayerMovement>(out PlayerMovement playerMove))
                     {
                         isEnemy = true;
-                        Debug.Log("EnemyTime");
                     }
                     enemies.Add(obj.gameObject);
                 }

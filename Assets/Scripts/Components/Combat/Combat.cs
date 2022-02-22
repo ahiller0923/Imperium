@@ -46,7 +46,7 @@ public class Combat : MonoBehaviour
         {
             PlayAnimation(player.transform.position);
             attackTime = Time.time;
-            player.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0);
+            player.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0, gameObject);
         }
         
     }
@@ -82,9 +82,11 @@ public class Combat : MonoBehaviour
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), arrow.GetComponent<Collider2D>());
 
         // Set target and damage
-        arrow.GetComponent<ProjectileTargetting>().SetTarget(target);
-        arrow.GetComponent<ProjectileTargetting>().SetSpeed(stats.projectileSpeed);
-        arrow.GetComponent<ProjectileTargetting>().SetPhysicalDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage));
+        ProjectileTargetting arrowSettings = arrow.GetComponent<ProjectileTargetting>();
+        arrowSettings.SetTarget(target);
+        arrowSettings.SetSpeed(stats.projectileSpeed);
+        arrowSettings.SetPhysicalDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage));
+        arrowSettings.SetAttacker(gameObject);
     }
 }
 

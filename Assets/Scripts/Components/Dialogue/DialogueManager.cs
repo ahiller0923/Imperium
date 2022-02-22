@@ -4,9 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using Ink.Runtime;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
+    public GameObject player;
+    private Stats stats;
+
     private static DialogueManager instance;
 
     [Header("Dialogue UI")]
@@ -24,6 +28,8 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
 
+    private float resolveEffect = 0;
+
     private void Awake()
     {
         if(instance != null)
@@ -34,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText = dialoguePanel.transform.GetChild(1).GetChild(1).GetComponent<TextMeshProUGUI>();
         dialoguePanel.transform.GetChild(1).GetChild(3).GetComponent<Button>().onClick.AddListener(() => ContinueStory());
+        stats = player.GetComponent<Stats>();
     }
 
     public static DialogueManager GetInstance()
@@ -123,18 +130,16 @@ public class DialogueManager : MonoBehaviour
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
+        CheckResolve();
     }
 
-    public bool CheckHostility()
+    public void CheckResolve()
     {
+        
         if(currentStory != null)
         {
-            if (currentStory.currentTags.Count > 0)
-            {
-                return true;
-            }
+            resolveEffect = float.Parse(currentStory.variablesState.GetVariableWithName("resolve").ToString());
+            stats.resolve += resolveEffect;
         }
-        
-        return false;
     }
 }

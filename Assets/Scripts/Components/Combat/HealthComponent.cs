@@ -39,11 +39,23 @@ public class HealthComponent : MonoBehaviour
             animator.SetBool("alive", false);
             GetComponent<MovementComponent>().enabled = false;
             GetComponent<Combat>().enabled = false;
+            GetComponent<NpcTargeting>().enabled = false;
         }
     }
 
-    public void TakeDamage(float physicalDamage, float magicDamage)
+    public void TakeDamage(float physicalDamage, float magicDamage, GameObject attacker)
     {
+        if(!CompareTag("Player"))
+        {
+            GetComponent<NpcTargeting>().SetTarget(attacker);
+            if(attacker.CompareTag("Player"))
+            {
+                tag = "Enemy";
+                GetComponent<Resolve>().isEnemy = true;
+            }
+        }
+        
+        
         health -= stats.CalculateDamageTaken(physicalDamage, magicDamage);
         if (health > 0)
         {
