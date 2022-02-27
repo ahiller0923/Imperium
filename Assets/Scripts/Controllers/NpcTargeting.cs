@@ -46,7 +46,16 @@ public class NpcTargeting : MonoBehaviour
 
     private void NewTarget()
     {
-        target = targets.Dequeue();
+        if(targets.Count > 0)
+        {
+            target = targets.Dequeue();
+        }
+        
+    }
+
+    public void SetTarget(GameObject enemy)
+    {
+        target = enemy;
     }
 
     private void CheckAttack()

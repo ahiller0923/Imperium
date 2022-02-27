@@ -26,7 +26,7 @@ public class PlayerInteraction : MonoBehaviour
             combat.RangedAttack(hit.transform.position);
         }
 
-        else if(hit.collider.CompareTag("Docile"))
+        else if(hit.collider.CompareTag("NPC"))
         {
             dialogue.InitiateDialogue(hit);
         }

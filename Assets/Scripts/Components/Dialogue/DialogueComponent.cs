@@ -11,18 +11,8 @@ public class DialogueComponent : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<EnemyMovement>().enabled = false;
+        gameObject.GetComponent<NpcTargeting>().enabled = false;
         gameObject.GetComponent<Combat>().enabled = false;
-    }
-
-    private void Update()
-    {
-        if(DialogueManager.GetInstance().CheckHostility())
-        {
-            gameObject.GetComponent<EnemyMovement>().enabled = true;
-            gameObject.GetComponent<Combat>().enabled = true;
-            gameObject.tag = "Enemy";
-        }
     }
 
     public void TriggerDialogue()

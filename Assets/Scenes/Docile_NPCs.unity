@@ -567,6 +567,7 @@ GameObject:
   - component: {fileID: 1000546277}
   - component: {fileID: 1000546276}
   - component: {fileID: 1000546283}
+  - component: {fileID: 1000546287}
   m_Layer: 0
   m_Name: LeftBandit
   m_TagString: NPC
@@ -586,6 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9ffc58637de204ea24bb850de5b7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnemy: 0
 --- !u!95 &1000546277
 Animator:
   serializedVersion: 3
@@ -687,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDelay: 1
-  attackRange: 0.5
+  attackRange: 1
   agroRange: 5
   basePhysicalDamage: 10
   baseMagicDamage: 0
@@ -798,6 +800,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000546287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000546275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9842f5c3e4c0964991a6bad42482b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJSON: {fileID: 4900000, guid: fda149f94fa06164c8cbf31d4675c3cb, type: 3}
+  name: Left Bandit
 --- !u!1 &1115166235
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,7 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDelay: 1
-  attackRange: 0.5
+  attackRange: 1
   agroRange: 5
   basePhysicalDamage: 10
   baseMagicDamage: 0
@@ -1140,6 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9ffc58637de204ea24bb850de5b7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnemy: 0
 --- !u!1 &1456673976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 893952845113538027, guid: 4f62c0d19faccd241b4a8faec29c6bf6,
@@ -1208,6 +1225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1163662720792213742, guid: f90a083f707f59c438381b6eaeb483a9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1878223164}
     - target: {fileID: 1163662720792213742, guid: f90a083f707f59c438381b6eaeb483a9,
         type: 3}
       propertyPath: dialogueText
