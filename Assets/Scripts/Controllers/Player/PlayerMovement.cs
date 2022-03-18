@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                if (hit.collider == null)
+                if (hit.collider == null || (!hit.collider.CompareTag("Enemy") && !hit.collider.CompareTag("NPC")))
                 {
                     DialogueManager.GetInstance().ExitDialogueMode();
                     movement.SetTarget(clickPoint);

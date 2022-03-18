@@ -19,6 +19,8 @@ public class Combat : MonoBehaviour
     private Animator animator;
     private Stats stats;
 
+    private GameObject targetObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,11 +46,21 @@ public class Combat : MonoBehaviour
     {
         if (Time.time - attackTime > attackDelay)
         {
+            animator.SetBool("attacking", true);
             PlayAnimation(player.transform.position);
             attackTime = Time.time;
-            player.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0, gameObject);
+            targetObject = player;
+        }
+    }
+
+    public void DealDamage()
+    {
+        if(Vector3.Distance(targetObject.transform.position, transform.position) < attackRange)
+        {
+            targetObject.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0, gameObject);
         }
         
+        animator.SetBool("attacking", false);
     }
 
     /* Determine which animation should play based on position of target relative to player position

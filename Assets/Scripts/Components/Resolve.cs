@@ -52,7 +52,7 @@ public class Resolve : MonoBehaviour
     {
         ArrayList enemies = new ArrayList();
 
-        foreach (Collider2D obj in Physics2D.OverlapCircleAll(transform.position, 20f)) {
+        foreach (Collider2D obj in Physics2D.OverlapCircleAll(transform.position, 5f)) {
             if(obj.gameObject.TryGetComponent(out Stats stats))
             {
                 if (Mathf.Abs(resolve - stats.resolve) > enemyThreshold && (Vector3.Distance(transform.position, obj.transform.position) < combat.agroRange))
@@ -62,6 +62,19 @@ public class Resolve : MonoBehaviour
                         isEnemy = true;
                     }
                     enemies.Add(obj.gameObject);
+                }
+
+                else if(obj.gameObject.TryGetComponent<NpcTargeting>(out NpcTargeting otherTargetting) && Mathf.Abs(resolve - stats.resolve) < 20)
+                {
+                    if(otherTargetting.target != null)
+                    {
+                        enemies.Add(otherTargetting.target);
+
+                        if(otherTargetting.target.CompareTag("Player"))
+                        {
+                            isEnemy = true;
+                        }
+                    } 
                 }
             }  
         }
