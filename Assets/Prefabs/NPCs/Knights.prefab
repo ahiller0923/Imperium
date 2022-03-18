@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDelay: 0.5
-  attackRange: 1.25
+  attackRange: 1.05
   agroRange: 10
   basePhysicalDamage: 20
   baseMagicDamage: 0
@@ -198,6 +198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnemy: 0
   enemyThreshold: 55
+  scanRange: 5
+  agroRange: 10
 --- !u!114 &1173092798827034603
 MonoBehaviour:
   m_ObjectHideFlags: 0
