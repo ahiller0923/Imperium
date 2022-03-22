@@ -20,6 +20,7 @@ public class Combat : MonoBehaviour
     private Stats stats;
 
     private GameObject targetObject;
+    private MovementComponent movement;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class Combat : MonoBehaviour
         animator = GetComponent<Animator>();
         stats = GetComponent<Stats>();
         target = transform.position;
+        movement = GetComponent<MovementComponent>();
     }
 
     /* If enough time has passed since last attack, attack point of click
@@ -34,11 +36,20 @@ public class Combat : MonoBehaviour
     */
     public void RangedAttack(Vector3 hit)
     {
-        if (Time.time - attackTime > attackDelay && Vector3.Distance(transform.position, hit) < attackRange)
+        if(Vector3.Distance(transform.position, hit) < attackRange)
         {
-            target = hit;
-            PlayAnimation(target);
-            attackTime = Time.time;
+            if(Time.time - attackTime > attackDelay)
+        {
+                target = hit;
+                PlayAnimation(target);
+                movement.SetTarget(transform.position);
+                attackTime = Time.time;
+            }
+        }
+        
+        else
+        {
+            movement.SetTarget(hit, true);
         }
     }
 

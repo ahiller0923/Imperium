@@ -8,6 +8,8 @@ public class MovementComponent : MonoBehaviour
     private Vector3 targetPosition;
     private Animator animator;
     public bool isFlipped;
+    private bool tryAttack = false;
+    private Combat combat;
 
     public float speed = 1;
 
@@ -15,6 +17,12 @@ public class MovementComponent : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         targetPosition = transform.position;
+        combat = GetComponent<Combat>();
+
+        if(!CompareTag("Player"))
+        {
+            speed = Random.Range(speed - .2f, speed + .5f);
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +35,10 @@ public class MovementComponent : MonoBehaviour
     private void Move()
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+        if(tryAttack)
+        {
+            combat.RangedAttack(targetPosition);
+        }
     }
 
     public void SetAlignment(Vector3 target)
@@ -86,10 +98,12 @@ public class MovementComponent : MonoBehaviour
         animator.SetInteger("AnimState", 0);
     }
 
-    public void SetTarget(Vector3 target)
+    public void SetTarget(Vector3 target, bool attack = false)
     {
         targetPosition = target;
         targetPosition.z = 0;
+
+        tryAttack = attack;
     }
 
     public Vector3 GetTarget()
