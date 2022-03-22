@@ -34,7 +34,7 @@ public class Combat : MonoBehaviour
     */
     public void RangedAttack(Vector3 hit)
     {
-        if (Time.time - attackTime > attackDelay)
+        if (Time.time - attackTime > attackDelay && Vector3.Distance(transform.position, hit) < attackRange)
         {
             target = hit;
             PlayAnimation(target);

@@ -75,6 +75,12 @@ public class MovementComponent : MonoBehaviour
         }
     }
 
+    public void TurnOffAnimations()
+    {
+        animator.SetInteger("AnimState", -1);
+        enabled = false;
+    }
+
     private void TurnOffMovementAnimations()
     {
         animator.SetInteger("AnimState", 0);

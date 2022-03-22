@@ -18,6 +18,9 @@ public class PlayerDialogue : MonoBehaviour
 
     public void InitiateDialogue(RaycastHit2D hit) 
     {
-        hit.collider.gameObject.GetComponent<DialogueComponent>().TriggerDialogue();
+        if(hit.collider.gameObject.TryGetComponent<DialogueComponent>(out DialogueComponent dialogue))
+        {
+            dialogue.TriggerDialogue();
+        }
     }
 }

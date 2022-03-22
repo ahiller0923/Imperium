@@ -11,13 +11,24 @@ public class Stats : MonoBehaviour
     public float dex;
     public float dexterity
     {
-        get { return dex + (Mathf.Abs(resolve) * .1f); }
+        get
+        {
+            if (CompareTag("Player"))
+            {
+                return dex + (Mathf.Abs(50 - resolve) * .01f);
+            }
+
+            else
+            {
+                return dex;
+            }
+        }
     }
 
     public float intel;
     public float intelligence
     {
-        get { return intel + (Mathf.Abs(resolve) * .1f); }
+        get { return intel + (Mathf.Abs(50 - resolve) * .1f); }
     }
 
     public float moveSpeed;
@@ -29,13 +40,33 @@ public class Stats : MonoBehaviour
     public float arm;
     public float armor
     {
-        get { return arm + (Mathf.Abs(resolve) * .01f); }
+        get
+        {
+            if (CompareTag("Player"))
+            {
+                return arm + (Mathf.Abs(50 - resolve) * .01f);
+            }
+
+            else
+            {
+                return arm;
+            }
+        }
     }
 
     public float mr;
     public float magicResist
     {
-        get { return mr + (Mathf.Abs(resolve) * .01f); }
+        get { if (CompareTag("Player"))
+            {
+                return mr + (Mathf.Abs(50 - resolve) * .01f);
+            }
+
+            else
+            {
+                return mr;
+            }
+        }
     }
 
     public float resolve;

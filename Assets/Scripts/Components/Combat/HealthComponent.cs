@@ -47,9 +47,11 @@ public class HealthComponent : MonoBehaviour
             alive = false;
             animator.Play("Death");
             animator.SetBool("alive", false);
+            GetComponent<MovementComponent>().TurnOffAnimations();
             GetComponent<MovementComponent>().enabled = false;
             GetComponent<Combat>().enabled = false;
             GetComponent<NpcTargeting>().enabled = false;
+            
         }
     }
 
@@ -88,7 +90,7 @@ public class HealthComponent : MonoBehaviour
                     attacker.GetComponent<Stats>().resolve -= 2;
                 }
                 
-                else
+                else if (stats.resolve == 0)
                 {
                     attacker.GetComponent<Stats>().resolve += 2;
                 }
