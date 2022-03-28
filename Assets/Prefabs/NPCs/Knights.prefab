@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9842f5c3e4c0964991a6bad42482b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: fda149f94fa06164c8cbf31d4675c3cb, type: 3}
+  inkJSON: {fileID: 0}
   name: 
 --- !u!61 &1173092798827034594
 BoxCollider2D:

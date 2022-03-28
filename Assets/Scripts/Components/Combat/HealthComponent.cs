@@ -19,7 +19,6 @@ public class HealthComponent : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.SetBool("alive", true);
         stats = GetComponent<Stats>();
         maxHealth = stats.health;
         health = maxHealth;
@@ -46,7 +45,6 @@ public class HealthComponent : MonoBehaviour
         {
             alive = false;
             animator.Play("Death");
-            animator.SetBool("alive", false);
             GetComponent<MovementComponent>().TurnOffAnimations();
             GetComponent<MovementComponent>().enabled = false;
             GetComponent<Combat>().enabled = false;
@@ -76,7 +74,7 @@ public class HealthComponent : MonoBehaviour
         
         if (health > 0)
         {
-            animator.SetTrigger("Hurt");
+            //animator.SetTrigger("Hurt");
         }
 
         else if (health <= 0 && alive)

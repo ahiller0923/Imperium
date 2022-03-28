@@ -19,7 +19,10 @@ public class DealDamage : StateMachineBehaviour
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.gameObject.GetComponent<Combat>().DealDamage();
+        if(animator.gameObject != null)
+        {
+            animator.gameObject.GetComponent<Combat>().DealDamage();
+        }
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

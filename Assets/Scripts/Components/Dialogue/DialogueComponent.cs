@@ -6,7 +6,7 @@ using TMPro;
 public class DialogueComponent : MonoBehaviour
 {
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    [SerializeField] public TextAsset inkJSON;
     public string name;
 
     private void Start()
@@ -17,6 +17,9 @@ public class DialogueComponent : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        DialogueManager.GetInstance().EnterDialogueMode(inkJSON, name);
+        if(inkJSON != null)
+        {
+            DialogueManager.GetInstance().EnterDialogueMode(gameObject);
+        }
     }
 }
