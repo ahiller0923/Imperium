@@ -9,6 +9,7 @@ using System;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject player;
+    public GameObject NPC;
     private Stats stats;
 
     private static DialogueManager instance;
@@ -21,7 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Choices UI")]
 
-    [SerializeField] private GameObject[] choices;
+    [SerializeField] public GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
     public bool dialogueIsPlaying;
@@ -63,13 +64,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EnterDialogueMode(TextAsset inkJSON, string name)
-    { 
-        currentStory = new Story(inkJSON.text);
+    public void EnterDialogueMode(GameObject caller)
+    {
+        NPC = caller;
+        currentStory = new Story(caller.GetComponent<DialogueComponent>().inkJSON.text);
         dialogueIsPlaying = true;
 
         dialoguePanel.SetActive(true);
-        dialoguePanel.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = name;
+        dialoguePanel.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = caller.GetComponent<DialogueComponent>().name;
 
         ContinueStory();
     }
@@ -120,6 +122,14 @@ public class DialogueManager : MonoBehaviour
             dialoguePanel.transform.GetChild(1).GetChild(3).gameObject.SetActive(false);
         }
 
+        else
+        {
+            if(dialogueText.text == "")
+            {
+                ExitDialogueMode();
+            }
+        }
+
         for(int i = index; i < choices.Length; i++)
         {
             choices[i].SetActive(false);
@@ -135,11 +145,26 @@ public class DialogueManager : MonoBehaviour
 
     public void CheckResolve()
     {
-        
         if(currentStory != null)
         {
             resolveEffect = float.Parse(currentStory.variablesState.GetVariableWithName("resolve").ToString());
-            stats.resolve += resolveEffect;
+            if(NPC.GetComponent<Stats>().resolve == 100)
+            {
+                stats.resolve += resolveEffect;
+            }
+            
+            else if(NPC.GetComponent<Stats>().resolve == 0)
+            {
+                stats.resolve -= resolveEffect;
+            }
+
+            if(currentStory.variablesState.GetVariableWithName("agro").ToString() == "true")
+            {
+                NPC.GetComponent<NpcTargeting>().SetTarget(player);
+                NPC.tag = "Enemy";
+                NPC.GetComponent<Resolve>().isEnemy = true;
+                ExitDialogueMode();
+            }
         }
     }
 }

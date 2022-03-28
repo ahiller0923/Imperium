@@ -19,12 +19,16 @@ public class Combat : MonoBehaviour
     private Animator animator;
     private Stats stats;
 
+    private GameObject targetObject;
+    private MovementComponent movement;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         stats = GetComponent<Stats>();
         target = transform.position;
+        movement = GetComponent<MovementComponent>();
     }
 
     /* If enough time has passed since last attack, attack point of click
@@ -32,11 +36,20 @@ public class Combat : MonoBehaviour
     */
     public void RangedAttack(Vector3 hit)
     {
-        if (Time.time - attackTime > attackDelay)
+        if(Vector3.Distance(transform.position, hit) < attackRange)
         {
-            target = hit;
-            PlayAnimation(target);
-            attackTime = Time.time;
+            if(Time.time - attackTime > attackDelay)
+        {
+                target = hit;
+                PlayAnimation(target);
+                movement.SetTarget(transform.position);
+                attackTime = Time.time;
+            }
+        }
+        
+        else
+        {
+            movement.SetTarget(hit, true);
         }
     }
 
@@ -44,11 +57,21 @@ public class Combat : MonoBehaviour
     {
         if (Time.time - attackTime > attackDelay)
         {
+            animator.SetBool("attacking", true);
             PlayAnimation(player.transform.position);
             attackTime = Time.time;
-            player.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0, gameObject);
+            targetObject = player;
+        }
+    }
+
+    public void DealDamage()
+    {
+        if(Vector3.Distance(targetObject.transform.position, transform.position) < attackRange)
+        {
+            targetObject.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0, gameObject);
         }
         
+        animator.SetBool("attacking", false);
     }
 
     /* Determine which animation should play based on position of target relative to player position

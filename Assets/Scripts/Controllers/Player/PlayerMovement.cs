@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
     MovementComponent movement;
     PlayerInteraction interact;
+    private PlayerAbilities abilities;
 
     public Texture2D cursorTexture;
     public Texture2D attackCursor;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         movement = GetComponent<MovementComponent>();
         interact = GetComponent<PlayerInteraction>();
         GetComponent<Animator>().SetBool("attackOnce", true);
+        abilities = GetComponent<PlayerAbilities>();
     }
 
     void Update()
@@ -53,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                if (hit.collider == null)
+                if (hit.collider == null || (!hit.collider.CompareTag("Enemy") && !hit.collider.CompareTag("NPC")))
                 {
                     DialogueManager.GetInstance().ExitDialogueMode();
                     movement.SetTarget(clickPoint);
@@ -64,11 +66,17 @@ public class PlayerMovement : MonoBehaviour
                     interactWithNpc();
                 }
             }
-        }
+        }   
 
         else
         {
             Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        }
+
+        if (Keyboard.current.eKey.isPressed)
+        {
+            abilities.Blink(clickPoint);
+            
         }
     }
 

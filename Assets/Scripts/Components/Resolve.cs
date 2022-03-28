@@ -11,6 +11,8 @@ public class Resolve : MonoBehaviour
     private float resolve;
     public bool isEnemy = false;
     public float enemyThreshold = 55;
+    public float scanRange = 5f;
+    public float agroRange = 10f;
 
     private void Start()
     {
@@ -52,7 +54,7 @@ public class Resolve : MonoBehaviour
     {
         ArrayList enemies = new ArrayList();
 
-        foreach (Collider2D obj in Physics2D.OverlapCircleAll(transform.position, 20f)) {
+        foreach (Collider2D obj in Physics2D.OverlapCircleAll(transform.position, scanRange)) {
             if(obj.gameObject.TryGetComponent(out Stats stats))
             {
                 if (Mathf.Abs(resolve - stats.resolve) > enemyThreshold && (Vector3.Distance(transform.position, obj.transform.position) < combat.agroRange))
@@ -62,6 +64,19 @@ public class Resolve : MonoBehaviour
                         isEnemy = true;
                     }
                     enemies.Add(obj.gameObject);
+                }
+
+                else if(obj.gameObject.TryGetComponent<NpcTargeting>(out NpcTargeting otherTargetting) && Mathf.Abs(resolve - stats.resolve) < 20)
+                {
+                    if(otherTargetting.target != null && Vector3.Distance(otherTargetting.target.transform.position, transform.position) < agroRange)
+                    {
+                        enemies.Add(otherTargetting.target);
+
+                        if(otherTargetting.target.CompareTag("Player"))
+                        {
+                            isEnemy = true;
+                        }
+                    } 
                 }
             }  
         }

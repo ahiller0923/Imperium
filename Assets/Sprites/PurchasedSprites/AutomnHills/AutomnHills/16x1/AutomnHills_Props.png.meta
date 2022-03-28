@@ -1,0 +1,3468 @@
+fileFormatVersion: 2
+guid: 795523f16ed242641827fb6d43a582ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7958788707144348284
+    second: AutomnHills_Props_0
+  - first:
+      213: -5154390349140988881
+    second: AutomnHills_Props_1
+  - first:
+      213: -7408765835578717812
+    second: AutomnHills_Props_2
+  - first:
+      213: -4399429737962326476
+    second: AutomnHills_Props_3
+  - first:
+      213: 9059496445673841973
+    second: AutomnHills_Props_4
+  - first:
+      213: -7489456913728937790
+    second: AutomnHills_Props_5
+  - first:
+      213: -7670436987538504688
+    second: AutomnHills_Props_6
+  - first:
+      213: 3802912232996418165
+    second: AutomnHills_Props_7
+  - first:
+      213: -1108792768936274618
+    second: AutomnHills_Props_8
+  - first:
+      213: -4901600181699901827
+    second: AutomnHills_Props_9
+  - first:
+      213: -2064050829795561723
+    second: AutomnHills_Props_10
+  - first:
+      213: -2517326334939048435
+    second: AutomnHills_Props_11
+  - first:
+      213: 8040301785920735272
+    second: AutomnHills_Props_12
+  - first:
+      213: 8674955442183181635
+    second: AutomnHills_Props_13
+  - first:
+      213: 7404360371108013721
+    second: AutomnHills_Props_14
+  - first:
+      213: 5302329860020569861
+    second: AutomnHills_Props_15
+  - first:
+      213: 5673463046861425434
+    second: AutomnHills_Props_16
+  - first:
+      213: -260736717110611301
+    second: AutomnHills_Props_17
+  - first:
+      213: -7783293397601112790
+    second: AutomnHills_Props_18
+  - first:
+      213: 2518214413423812409
+    second: AutomnHills_Props_19
+  - first:
+      213: 180159920332177335
+    second: AutomnHills_Props_20
+  - first:
+      213: 7685651678486974448
+    second: AutomnHills_Props_21
+  - first:
+      213: -5298975841081566437
+    second: AutomnHills_Props_22
+  - first:
+      213: -4691645433790243493
+    second: AutomnHills_Props_23
+  - first:
+      213: 6415184864692783846
+    second: AutomnHills_Props_24
+  - first:
+      213: -1038801308157760890
+    second: AutomnHills_Props_25
+  - first:
+      213: -4311995312930627428
+    second: AutomnHills_Props_26
+  - first:
+      213: 701987563254611152
+    second: AutomnHills_Props_27
+  - first:
+      213: 8515042933060602519
+    second: AutomnHills_Props_28
+  - first:
+      213: -8772814061652269420
+    second: AutomnHills_Props_29
+  - first:
+      213: 756474586817671779
+    second: AutomnHills_Props_30
+  - first:
+      213: 6875882574536417750
+    second: AutomnHills_Props_31
+  - first:
+      213: -4424159593189188745
+    second: AutomnHills_Props_32
+  - first:
+      213: 2688286602878019379
+    second: AutomnHills_Props_33
+  - first:
+      213: -388418020092148032
+    second: AutomnHills_Props_34
+  - first:
+      213: -6479480507984405241
+    second: AutomnHills_Props_35
+  - first:
+      213: -5743750101824983681
+    second: AutomnHills_Props_36
+  - first:
+      213: -4927925099707464752
+    second: AutomnHills_Props_37
+  - first:
+      213: 4596272949512829120
+    second: AutomnHills_Props_38
+  - first:
+      213: -7390289390436136450
+    second: AutomnHills_Props_39
+  - first:
+      213: -6983363316645987104
+    second: AutomnHills_Props_40
+  - first:
+      213: -2705988447875150500
+    second: AutomnHills_Props_41
+  - first:
+      213: 4202579479967716002
+    second: AutomnHills_Props_42
+  - first:
+      213: -5670792279175394277
+    second: AutomnHills_Props_43
+  - first:
+      213: -5741536794231930676
+    second: AutomnHills_Props_44
+  - first:
+      213: -6692532134447728329
+    second: AutomnHills_Props_45
+  - first:
+      213: -5537792428213034566
+    second: AutomnHills_Props_46
+  - first:
+      213: 8099271946797174120
+    second: AutomnHills_Props_47
+  - first:
+      213: 7039265865213307958
+    second: AutomnHills_Props_48
+  - first:
+      213: 6632054273101125774
+    second: AutomnHills_Props_49
+  - first:
+      213: 270465371452599148
+    second: AutomnHills_Props_50
+  - first:
+      213: -682937816853425673
+    second: AutomnHills_Props_51
+  - first:
+      213: 4224252964685759253
+    second: AutomnHills_Props_52
+  - first:
+      213: 2948850488321944164
+    second: AutomnHills_Props_53
+  - first:
+      213: 2391880903081641777
+    second: AutomnHills_Props_54
+  - first:
+      213: -2774645829523212821
+    second: AutomnHills_Props_55
+  - first:
+      213: -8553862140069000978
+    second: AutomnHills_Props_56
+  - first:
+      213: 5903152329966653698
+    second: AutomnHills_Props_57
+  - first:
+      213: -8663124773351283143
+    second: AutomnHills_Props_58
+  - first:
+      213: 3650544086957296653
+    second: AutomnHills_Props_59
+  - first:
+      213: 7599928173537882610
+    second: AutomnHills_Props_60
+  - first:
+      213: 1057142098627666508
+    second: AutomnHills_Props_61
+  - first:
+      213: 871670541731414971
+    second: AutomnHills_Props_62
+  - first:
+      213: -1972634152472724237
+    second: AutomnHills_Props_63
+  - first:
+      213: -6521928145530603969
+    second: AutomnHills_Props_64
+  - first:
+      213: -4283149065198902027
+    second: AutomnHills_Props_65
+  - first:
+      213: 6160961257329402106
+    second: AutomnHills_Props_66
+  - first:
+      213: -2070555087860473201
+    second: AutomnHills_Props_67
+  - first:
+      213: 3367252454224890435
+    second: AutomnHills_Props_68
+  - first:
+      213: -6137635186580420047
+    second: AutomnHills_Props_69
+  - first:
+      213: 3756493934695911522
+    second: AutomnHills_Props_70
+  - first:
+      213: -7830980710271006376
+    second: AutomnHills_Props_71
+  - first:
+      213: -2404116688543142349
+    second: AutomnHills_Props_72
+  - first:
+      213: -4775346071945225095
+    second: AutomnHills_Props_73
+  - first:
+      213: -2229042214685904168
+    second: AutomnHills_Props_74
+  - first:
+      213: 6764426956710938498
+    second: AutomnHills_Props_75
+  - first:
+      213: -2905814837070584715
+    second: AutomnHills_Props_76
+  - first:
+      213: -454461396529545824
+    second: AutomnHills_Props_77
+  - first:
+      213: 8074905154380109126
+    second: AutomnHills_Props_78
+  - first:
+      213: 3012642903549440370
+    second: AutomnHills_Props_79
+  - first:
+      213: 5296144877641891871
+    second: AutomnHills_Props_80
+  - first:
+      213: 542034458911956937
+    second: AutomnHills_Props_81
+  - first:
+      213: -2286415523771532273
+    second: AutomnHills_Props_82
+  - first:
+      213: -7004881604746576096
+    second: AutomnHills_Props_83
+  - first:
+      213: 8111832902322761324
+    second: AutomnHills_Props_84
+  - first:
+      213: -4614052514627327172
+    second: AutomnHills_Props_85
+  - first:
+      213: -4591743837749474376
+    second: AutomnHills_Props_86
+  - first:
+      213: 1639662682638441561
+    second: AutomnHills_Props_87
+  - first:
+      213: 3784841529867264334
+    second: AutomnHills_Props_88
+  - first:
+      213: -2584340949342660724
+    second: AutomnHills_Props_89
+  - first:
+      213: -7683748608974832821
+    second: AutomnHills_Props_90
+  - first:
+      213: 7684790026900650968
+    second: AutomnHills_Props_91
+  - first:
+      213: -8790376154097178873
+    second: AutomnHills_Props_92
+  - first:
+      213: -5523870045081133690
+    second: AutomnHills_Props_93
+  - first:
+      213: -2101963335175403968
+    second: AutomnHills_Props_94
+  - first:
+      213: -8684376124026200829
+    second: AutomnHills_Props_95
+  - first:
+      213: -5332789927821153883
+    second: AutomnHills_Props_96
+  - first:
+      213: -1616543286803402477
+    second: AutomnHills_Props_97
+  - first:
+      213: 4784049624225080616
+    second: AutomnHills_Props_98
+  - first:
+      213: -4046644434045342009
+    second: AutomnHills_Props_99
+  - first:
+      213: -3012285802013831514
+    second: AutomnHills_Props_100
+  - first:
+      213: 8574422984928461421
+    second: AutomnHills_Props_101
+  - first:
+      213: 2874230616374465343
+    second: AutomnHills_Props_102
+  - first:
+      213: -8211473832119535352
+    second: AutomnHills_Props_103
+  - first:
+      213: -1626063304366458332
+    second: AutomnHills_Props_104
+  - first:
+      213: -1066541253699196214
+    second: AutomnHills_Props_105
+  - first:
+      213: 4528325300750632936
+    second: AutomnHills_Props_106
+  - first:
+      213: 5132268043699643751
+    second: AutomnHills_Props_107
+  - first:
+      213: -576178843571151643
+    second: AutomnHills_Props_108
+  - first:
+      213: -5762004749422056822
+    second: AutomnHills_Props_109
+  - first:
+      213: 6521617814127156881
+    second: AutomnHills_Props_110
+  - first:
+      213: -3243998364484474071
+    second: AutomnHills_Props_111
+  - first:
+      213: 342657104395774429
+    second: AutomnHills_Props_112
+  - first:
+      213: 1042220472685257470
+    second: AutomnHills_Props_113
+  - first:
+      213: -8388624538522162755
+    second: AutomnHills_Props_114
+  - first:
+      213: 8349344208655679460
+    second: AutomnHills_Props_115
+  - first:
+      213: -1211373562948737580
+    second: AutomnHills_Props_116
+  - first:
+      213: -6841048832558649097
+    second: AutomnHills_Props_117
+  - first:
+      213: 2952846846344753301
+    second: AutomnHills_Props_118
+  - first:
+      213: -6737152832912469813
+    second: AutomnHills_Props_119
+  - first:
+      213: 618718742899728081
+    second: AutomnHills_Props_120
+  - first:
+      213: 1964495709546513757
+    second: AutomnHills_Props_121
+  - first:
+      213: 6310942751277801311
+    second: AutomnHills_Props_122
+  - first:
+      213: 335882667487482102
+    second: AutomnHills_Props_123
+  - first:
+      213: -1137462826856936268
+    second: AutomnHills_Props_124
+  - first:
+      213: -3244816690982472353
+    second: AutomnHills_Props_125
+  - first:
+      213: 30954824078297906
+    second: AutomnHills_Props_126
+  - first:
+      213: -1451311024636270614
+    second: AutomnHills_Props_127
+  - first:
+      213: 8207206404279357895
+    second: AutomnHills_Props_128
+  - first:
+      213: 6840817500375000004
+    second: AutomnHills_Props_129
+  - first:
+      213: -6926593115403395441
+    second: AutomnHills_Props_130
+  - first:
+      213: 7871493432774441425
+    second: AutomnHills_Props_131
+  - first:
+      213: -2074307181312639730
+    second: AutomnHills_Props_132
+  - first:
+      213: -6150071050006853432
+    second: AutomnHills_Props_133
+  - first:
+      213: -7836728905397924127
+    second: AutomnHills_Props_134
+  - first:
+      213: 8244349045982120683
+    second: AutomnHills_Props_135
+  - first:
+      213: 6474553245714820357
+    second: AutomnHills_Props_136
+  - first:
+      213: -2228163249221326373
+    second: AutomnHills_Props_137
+  - first:
+      213: 4425701412956970041
+    second: AutomnHills_Props_138
+  - first:
+      213: 4057684618385009346
+    second: AutomnHills_Props_139
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AutomnHills_Props_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 767
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72bab3692c437e60800000000000000
+      internalID: 7958788707144348284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 734
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cefbd594de778b0800000000000000
+      internalID: -5154390349140988881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_2
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 721
+        width: 80
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89c742d9b6ce2990800000000000000
+      internalID: -7408765835578717812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 731
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436377666f512f2c0800000000000000
+      internalID: -4399429737962326476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 733
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535ad40a40cc9bd70800000000000000
+      internalID: 9059496445673841973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 732
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0e7982e9a101890800000000000000
+      internalID: -7489456913728937790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 692
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01400c513322d8590800000000000000
+      internalID: -7670436987538504688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 579
+        width: 108
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5723db7f688a6c430800000000000000
+      internalID: 3802912232996418165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 557
+        width: 77
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645180ee9d6cc90f0800000000000000
+      internalID: -1108792768936274618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 593
+        width: 95
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7689c2ca940afbb0800000000000000
+      internalID: -4901600181699901827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 670
+        width: 68
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f6fa3c4b40b53e0800000000000000
+      internalID: -2064050829795561723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_11
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 728
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06d8362909a01dd0800000000000000
+      internalID: -2517326334939048435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_12
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 728
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8288ebcffd3e49f60800000000000000
+      internalID: 8040301785920735272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 716
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3459ba54302a36870800000000000000
+      internalID: 8674955442183181635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_14
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 697
+        width: 17
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9966fdc078291c660800000000000000
+      internalID: 7404360371108013721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_15
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 702
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507097c2ae8a59940800000000000000
+      internalID: 5302329860020569861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_16
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 719
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b0b72f4903cbe40800000000000000
+      internalID: 5673463046861425434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_17
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 439
+        width: 181
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9278b4565da16cf0800000000000000
+      internalID: -260736717110611301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_18
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 697
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2da75d74ef2cf390800000000000000
+      internalID: -7783293397601112790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_19
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 440
+        width: 122
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f156cbaae72f220800000000000000
+      internalID: 2518214413423812409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 719
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf79263e7e008200800000000000000
+      internalID: 180159920332177335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_21
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 724
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffc9933b7be8aa60800000000000000
+      internalID: 7685651678486974448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_22
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 707
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bd4f63c814676b0800000000000000
+      internalID: -5298975841081566437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_23
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 701
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d59dad55de3eeb0800000000000000
+      internalID: -4691645433790243493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_24
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 705
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eac97435a0570950800000000000000
+      internalID: 6415184864692783846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_25
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 710
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68aab0bc6bf6591f0800000000000000
+      internalID: -1038801308157760890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_26
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 680
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90ee9bdb17b824c0800000000000000
+      internalID: -4311995312930627428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_27
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 704
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc788038f5fdb900800000000000000
+      internalID: 701987563254611152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_28
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 500
+        width: 147
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a0748de628b2670800000000000000
+      internalID: 8515042933060602519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 690
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4962aae5714b04680800000000000000
+      internalID: -8772814061652269420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_30
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 681
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362b0e4f0a98f7a00800000000000000
+      internalID: 756474586817671779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_31
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 674
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1aa8485ca0c6f50800000000000000
+      internalID: 6875882574536417750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_32
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 691
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b525a4a4a3a92c0800000000000000
+      internalID: -4424159593189188745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_33
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 690
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3376cf21c66be4520800000000000000
+      internalID: 2688286602878019379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_34
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 623
+        width: 29
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c60c006edf0c9af0800000000000000
+      internalID: -388418020092148032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_35
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 678
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d9588cec24416a0800000000000000
+      internalID: -6479480507984405241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 676
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dab1ec6b91a40b0800000000000000
+      internalID: -5743750101824983681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_37
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 671
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d384382b3e7c9bb0800000000000000
+      internalID: -4927925099707464752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_38
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 629
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8f27e35ed39cf30800000000000000
+      internalID: 4596272949512829120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_39
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 608
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef947bf64fa607990800000000000000
+      internalID: -7390289390436136450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_40
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 679
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec72dd101c161f90800000000000000
+      internalID: -6983363316645987104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_41
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 624
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d4716f7d5627ad0800000000000000
+      internalID: -2705988447875150500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 667
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a252d355cf825a30800000000000000
+      internalID: 4202579479967716002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 664
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c09bc977c4d41b0800000000000000
+      internalID: -5670792279175394277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_44
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 670
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc088f2a4b6f150b0800000000000000
+      internalID: -5741536794231930676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 662
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7393b567b795f13a0800000000000000
+      internalID: -6692532134447728329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_46
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 648
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1a384802fc523b0800000000000000
+      internalID: -5537792428213034566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_47
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 625
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dc1208ce4666070800000000000000
+      internalID: 8099271946797174120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_48
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 635
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c629f320f70b160800000000000000
+      internalID: 7039265865213307958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 633
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88dd47293ac90c50800000000000000
+      internalID: 6632054273101125774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_50
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 588
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6be97582d2e0c300800000000000000
+      internalID: 270465371452599148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_51
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 453
+        width: 112
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f155c68ca7b586f0800000000000000
+      internalID: -682937816853425673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_52
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 619
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5134c79b0bf8f9a30800000000000000
+      internalID: 4224252964685759253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_53
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 567
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aaa2c35eb6ce820800000000000000
+      internalID: 2948850488321944164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_54
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 570
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137c835320ba13120800000000000000
+      internalID: 2391880903081641777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_55
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 577
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5ffb9915a7e79d0800000000000000
+      internalID: -2774645829523212821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_56
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 592
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8468334b39a4980800000000000000
+      internalID: -8553862140069000978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_57
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 579
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2019ea294c53ce150800000000000000
+      internalID: 5903152329966653698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_58
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 567
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936a287fae566c780800000000000000
+      internalID: -8663124773351283143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_59
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 583
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c0ef3718659a230800000000000000
+      internalID: 3650544086957296653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_60
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 582
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1753e586e587960800000000000000
+      internalID: 7599928173537882610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_61
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 573
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4220d14329bbae00800000000000000
+      internalID: 1057142098627666508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_62
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 357
+        width: 138
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3c2194dbbc81c00800000000000000
+      internalID: 871670541731414971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_63
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 573
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc3f0690bbcf94e0800000000000000
+      internalID: -1972634152472724237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_64
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 515
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36b60308e47d75a0800000000000000
+      internalID: -6521928145530603969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_65
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 564
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4e5c84e923f84c0800000000000000
+      internalID: -4283149065198902027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_66
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 561
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af020121f91208550800000000000000
+      internalID: 6160961257329402106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_67
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 563
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82e23c2e19e343e0800000000000000
+      internalID: -2070555087860473201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_68
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 421
+        width: 189
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a03234442eabe20800000000000000
+      internalID: 3367252454224890435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_69
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 554
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a8feef05db2daa0800000000000000
+      internalID: -6137635186580420047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_70
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 509
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2609572b45fb12430800000000000000
+      internalID: 3756493934695911522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_71
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 508
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8594c59c884c25390800000000000000
+      internalID: -7830980710271006376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_72
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 528
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e2cccfb9cd2aed0800000000000000
+      internalID: -2404116688543142349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_73
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 496
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cd5266c009abdb0800000000000000
+      internalID: -4775346071945225095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_74
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 349
+        width: 106
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2fb4c6ae9d011e0800000000000000
+      internalID: -2229042214685904168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_75
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 444
+        width: 18
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28705d74a7210ed50800000000000000
+      internalID: 6764426956710938498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_76
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 430
+        width: 37
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57429552dc87ca7d0800000000000000
+      internalID: -2905814837070584715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_77
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 490
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad7ab784cd61b9f0800000000000000
+      internalID: -454461396529545824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_78
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 457
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6451cc98473df0070800000000000000
+      internalID: 8074905154380109126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_79
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 449
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2717a2552ce0fc920800000000000000
+      internalID: 3012642903549440370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_80
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 429
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1089deb4bfaf7940800000000000000
+      internalID: 5296144877641891871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_81
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 423
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfd773f771b58700800000000000000
+      internalID: 542034458911956937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_82
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 439
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cb8a0f1350540e0800000000000000
+      internalID: -2286415523771532273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_83
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 325
+        width: 99
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f796f3b49a9ce90800000000000000
+      internalID: -7004881604746576096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_84
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 405
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e264cdb05039070800000000000000
+      internalID: 8111832902322761324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_85
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 433
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3be3aa2fa797ffb0800000000000000
+      internalID: -4614052514627327172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_86
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 436
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb8a53ce49d640c0800000000000000
+      internalID: -4591743837749474376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_87
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 413
+        width: 19
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cd026c58041c610800000000000000
+      internalID: 1639662682638441561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_88
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 397
+        width: 139
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4162e68155768430800000000000000
+      internalID: 3784841529867264334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_89
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 403
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c875fe75993922cd0800000000000000
+      internalID: -2584340949342660724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_90
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 415
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b37a2b957dd5590800000000000000
+      internalID: -7683748608974832821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_91
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 402
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbb0ee40dbd5aa60800000000000000
+      internalID: 7684790026900650968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_92
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 402
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70729f4167f420680800000000000000
+      internalID: -8790376154097178873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_93
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 419
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d9481f5754753b0800000000000000
+      internalID: -5523870045081133690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_94
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 416
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04689fbbb7354d2e0800000000000000
+      internalID: -2101963335175403968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_95
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 404
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dd88f4de5ea7780800000000000000
+      internalID: -8684376124026200829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_96
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 312
+        width: 79
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a96072a0df1ef5b0800000000000000
+      internalID: -5332789927821153883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_97
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 182
+        width: 219
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3117a0a0272e099e0800000000000000
+      internalID: -1616543286803402477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_98
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 217
+        width: 180
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825e6c749cb546240800000000000000
+      internalID: 4784049624225080616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_99
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 233
+        width: 98
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce6a68c35e67d7c0800000000000000
+      internalID: -4046644434045342009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_100
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 402
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae4309d5063236d0800000000000000
+      internalID: -3012285802013831514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_101
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 390
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d620b9a86487ef670800000000000000
+      internalID: 8574422984928461421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_102
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 264
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f335d8b648153e720800000000000000
+      internalID: 2874230616374465343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_103
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 357
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80979125e0cfa0e80800000000000000
+      internalID: -8211473832119535352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_104
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 338
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a70f83a001f69e0800000000000000
+      internalID: -1626063304366458332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_105
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 271
+        width: 57
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acaa5fa6162e231f0800000000000000
+      internalID: -1066541253699196214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_106
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 270
+        width: 95
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7c7a27ed7d7de30800000000000000
+      internalID: 4528325300750632936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_107
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 282
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7656ec4089a793740800000000000000
+      internalID: 5132268043699643751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_108
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 288
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec98ddf4600108f0800000000000000
+      internalID: -576178843571151643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_109
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 337
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8aa594753f3900b0800000000000000
+      internalID: -5762004749422056822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_110
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 293
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e98e359d0718a50800000000000000
+      internalID: 6521617814127156881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_111
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 294
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b64f8cca00bf2d0800000000000000
+      internalID: -3243998364484474071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_112
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 179
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9264b22dc51c400800000000000000
+      internalID: 342657104395774429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_113
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 166
+        width: 176
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef26b0c7ff5b67e00800000000000000
+      internalID: 1042220472685257470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_114
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 192
+        width: 48
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9e2435d6e959b80800000000000000
+      internalID: -8388624538522162755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_115
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 133
+        width: 26
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eff2603254ded370800000000000000
+      internalID: 8349344208655679460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_116
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 210
+        width: 101
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d52422a926503fe0800000000000000
+      internalID: -1211373562948737580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_117
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 223
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0bd3c0556bf01a0800000000000000
+      internalID: -6841048832558649097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_118
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 231
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590f288df8e9af820800000000000000
+      internalID: 2952846846344753301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_119
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 176
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc05cb48133d082a0800000000000000
+      internalID: -6737152832912469813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_120
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 3
+        width: 208
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de1a662b61269800800000000000000
+      internalID: 618718742899728081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_121
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 142
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d558c42807a434b10800000000000000
+      internalID: 1964495709546513757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_122
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 175
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f5db7def8f49750800000000000000
+      internalID: 6310942751277801311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_123
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 189
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f05dc9a18b49a400800000000000000
+      internalID: 335882667487482102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_124
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 171
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0bf3e59be630f0800000000000000
+      internalID: -1137462826856936268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_125
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 103
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f553bbc496818f2d0800000000000000
+      internalID: -3244816690982472353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_126
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 42
+        width: 55
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b854d9f39fd6000800000000000000
+      internalID: 30954824078297906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_127
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 62
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae762fdff48ebdbe0800000000000000
+      internalID: -1451311024636270614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_128
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 30
+        width: 36
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1d165bdbad5e170800000000000000
+      internalID: 8207206404279357895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_129
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 93
+        width: 88
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3a02bb5477fee50800000000000000
+      internalID: 6840817500375000004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_130
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 19
+        width: 36
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ed6bc924ccfdf90800000000000000
+      internalID: -6926593115403395441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_131
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 75
+        width: 68
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9375872992d3d60800000000000000
+      internalID: 7871493432774441425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_132
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 10
+        width: 64
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d71d6db949633e0800000000000000
+      internalID: -2074307181312639730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_133
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 16
+        width: 26
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c88de8e6fe86aaa0800000000000000
+      internalID: -6150071050006853432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_134
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 64
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee88b0d4985e3390800000000000000
+      internalID: -7836728905397924127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_135
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 4
+        width: 22
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea4812e6cfc96270800000000000000
+      internalID: 8244349045982120683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_136
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 93
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d2f229fdb3ad950800000000000000
+      internalID: 6474553245714820357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_137
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1
+        width: 106
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd925948459f311e0800000000000000
+      internalID: -2228163249221326373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_138
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 33
+        width: 81
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c9e399cff3b6d30800000000000000
+      internalID: 4425701412956970041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutomnHills_Props_139
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 11
+        width: 88
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caa76179aacf4830800000000000000
+      internalID: 4057684618385009346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

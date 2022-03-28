@@ -5,10 +5,10 @@ VAR resolve = 0
 === ChooseSide ===
 Which side will you choose?
     + [I choose left!]
-        ~resolve = 1
+        ~resolve = 3
         -> LeftSider
     + [I choose right!]
-        ~resolve = -1
+        ~resolve = -3
         ->RightSider
         
 === RightSider ===

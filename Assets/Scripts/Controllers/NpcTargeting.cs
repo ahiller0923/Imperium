@@ -6,7 +6,7 @@ public class NpcTargeting : MonoBehaviour
 {
 
     private Queue<GameObject> targets;
-    private GameObject target;
+    public GameObject target;
     private Combat combat;
     private MovementComponent movement;
 

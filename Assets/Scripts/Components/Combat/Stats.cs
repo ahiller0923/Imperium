@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Stats : MonoBehaviour
 {
@@ -10,13 +11,24 @@ public class Stats : MonoBehaviour
     public float dex;
     public float dexterity
     {
-        get { return dex + (Mathf.Abs(resolve) * .1f); }
+        get
+        {
+            if (CompareTag("Player"))
+            {
+                return dex + (Mathf.Abs(50 - resolve) * .01f);
+            }
+
+            else
+            {
+                return dex;
+            }
+        }
     }
 
     public float intel;
     public float intelligence
     {
-        get { return intel + (Mathf.Abs(resolve) * .1f); }
+        get { return intel + (Mathf.Abs(50 - resolve) * .1f); }
     }
 
     public float moveSpeed;
@@ -28,18 +40,48 @@ public class Stats : MonoBehaviour
     public float arm;
     public float armor
     {
-        get { return arm + (Mathf.Abs(resolve) * .01f); }
+        get
+        {
+            if (CompareTag("Player"))
+            {
+                return arm + (Mathf.Abs(50 - resolve) * .01f);
+            }
+
+            else
+            {
+                return arm;
+            }
+        }
     }
 
     public float mr;
     public float magicResist
     {
-        get { return mr + (Mathf.Abs(resolve) * .01f); }
+        get { if (CompareTag("Player"))
+            {
+                return mr + (Mathf.Abs(50 - resolve) * .01f);
+            }
+
+            else
+            {
+                return mr;
+            }
+        }
     }
 
     public float resolve;
 
+    public Image redImg;
+    public Image blueImg;
+    private float scaleFactor;
 
+    private void Update()
+    {
+        if(CompareTag("Player"))
+        {
+            SetResolveSymbol();
+        }
+    }
 
     // Methods
     public float CalculatePhysicalDamageDealt(float baseDamage)
@@ -55,5 +97,28 @@ public class Stats : MonoBehaviour
     public float CalculateDamageTaken(float physicalDamage, float magicDamage)
     {
         return physicalDamage * (1 - (armor * .01f)) + magicDamage * (1 - (magicResist * .01f));
+    }
+
+    private void SetResolveSymbol()
+    {
+        if(resolve > 55)
+        {
+            redImg.gameObject.SetActive(true);
+            blueImg.gameObject.SetActive(false);
+            scaleFactor = resolve * .01f;
+            redImg.rectTransform.localScale = scaleFactor * Vector3.one;
+        }
+        else if(resolve < 45)
+        {
+            blueImg.gameObject.SetActive(true);
+            redImg.gameObject.SetActive(false);
+            scaleFactor = (100 - resolve) * .01f;
+            blueImg.rectTransform.localScale = scaleFactor * Vector3.one;
+        }
+        else
+        {
+            blueImg.gameObject.SetActive(false);
+            redImg.gameObject.SetActive(false);
+        }
     }
 }
