@@ -13,23 +13,36 @@ public class NpcTargeting : MonoBehaviour
     public bool isRanged;
 
     private float distanceFromPlayer;
+
+    public float immersiveMoveTimeLimit = 20;
+    public int randomMove = 1000;
+    private int moveCheck;
+    private float immersiveMoveTime;
+
+    public float immersiveMoveDistance;
+
+    public Vector3 villageCenter = new Vector3(15, 5, 0);
+
     // Start is called before the first frame update
     void Start()
     {
         combat = GetComponent<Combat>();
         movement = GetComponent<MovementComponent>();
         targets = new Queue<GameObject>();
+        moveCheck = randomMove;
+        immersiveMoveTime = Time.time;
+        immersiveMoveDistance = 5;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(target == null && targets.Count > 0)
+        if(target == null)
         {
             NewTarget();
         }
 
-        if(target != null)
+        else
         {
             CheckAttack();
         }
@@ -51,6 +64,10 @@ public class NpcTargeting : MonoBehaviour
             target = targets.Dequeue();
         }
         
+        else
+        {
+            DocileMovement();
+        }
     }
 
     public void SetTarget(GameObject enemy)
@@ -82,6 +99,27 @@ public class NpcTargeting : MonoBehaviour
         else
         {
             NewTarget();
+        }
+    }
+
+    private void DocileMovement()
+    {
+        if (!movement.isMoving)
+        {
+            if (Random.Range(0, moveCheck) == 7)
+            {
+                Vector3 moveLocation = new Vector3(Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageCenter.x,
+                    Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageCenter.y, 0);
+                movement.SetTarget(moveLocation);
+                moveCheck = randomMove;
+                immersiveMoveTime = Time.time;
+            }
+
+            else if (Time.time - immersiveMoveTime >= immersiveMoveTimeLimit)
+            {
+                moveCheck = moveCheck / 2;
+                immersiveMoveTime = Time.time;
+            }
         }
     }
 }

@@ -1,34 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class MovementComponent : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 targetPosition;
+    private GameObject targetObject;
     private Animator animator;
     public bool isFlipped;
     private bool tryAttack = false;
     private Combat combat;
+    private SpriteRenderer sprite;
+    private AIDestinationSetter destinationSetter;
+
+    private Vector3 lastPos;
 
     public float speed = 1;
 
+    public bool isMoving;
+
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         targetPosition = transform.position;
         combat = GetComponent<Combat>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        destinationSetter = GetComponent<AIDestinationSetter>();
+        targetObject = new GameObject();
 
-        if(!CompareTag("Player"))
+        if (!CompareTag("Player"))
         {
             speed = Random.Range(speed - .2f, speed + .5f);
         }
+        lastPos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        //Move();
         SetAnimations();
     }
 
@@ -45,11 +57,11 @@ public class MovementComponent : MonoBehaviour
     {
         if (transform.position.x - target.x < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = !isFlipped;
+            sprite.flipX = !isFlipped;
         }
         else
         {
-            GetComponent<SpriteRenderer>().flipX = isFlipped;
+            sprite.flipX = isFlipped;
         }
     }
 
@@ -61,9 +73,10 @@ public class MovementComponent : MonoBehaviour
      * */
     private void SetAnimations()
     {
-        if(transform.position == targetPosition)
+        if(transform.position == lastPos)
         {
             TurnOffMovementAnimations();
+            isMoving = false;
         }
 
         else if(Mathf.Abs(transform.position.x - targetPosition.x) > Mathf.Abs(transform.position.y - targetPosition.y)) {
@@ -71,11 +84,12 @@ public class MovementComponent : MonoBehaviour
             SetAlignment(targetPosition);
 
             animator.SetInteger("AnimState", 3);
+            isMoving = true;
         }
 
         else
         {
-
+            isMoving = true;
             if (transform.position.y - targetPosition.y < 0)
             {
                 animator.SetInteger("AnimState", 1);
@@ -85,6 +99,7 @@ public class MovementComponent : MonoBehaviour
                 animator.SetInteger("AnimState", 2);
             }
         }
+        lastPos = transform.position;
     }
 
     public void TurnOffAnimations()
@@ -102,6 +117,9 @@ public class MovementComponent : MonoBehaviour
     {
         targetPosition = target;
         targetPosition.z = 0;
+        targetObject.transform.position = targetPosition;
+
+        destinationSetter.target = targetObject.transform;
 
         tryAttack = attack;
     }

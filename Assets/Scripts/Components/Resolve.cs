@@ -27,7 +27,7 @@ public class Resolve : MonoBehaviour
 
         if(CheckAlignment().Count == 0 && !isEnemy)
         {
-            targetting.enabled = false;
+            //targetting.enabled = false;
             combat.enabled = false;
             tag = "NPC";
         }

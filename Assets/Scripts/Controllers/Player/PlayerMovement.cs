@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = GetComponent<MovementComponent>();
         interact = GetComponent<PlayerInteraction>();
-        GetComponent<Animator>().SetBool("attackOnce", true);
+        GetComponentInChildren<Animator>().SetBool("attackOnce", true);
         abilities = GetComponent<PlayerAbilities>();
     }
 
