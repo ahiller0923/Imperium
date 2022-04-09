@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 0f5434423422cbd4eb95d60e2e07dabb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4079290234199265882
+    second: $AutomnHills_Candle3_0
+  - first:
+      213: 3614737130716299084
+    second: $AutomnHills_Candle3_1
+  - first:
+      213: 998328008876452210
+    second: $AutomnHills_Candle3_2
+  - first:
+      213: -999507802986189575
+    second: $AutomnHills_Candle3_3
+  - first:
+      213: -7173567673649033845
+    second: $AutomnHills_Candle3_4
+  - first:
+      213: 6704915747942913441
+    second: $AutomnHills_Candle3_5
+  - first:
+      213: 3773824640055908692
+    second: $AutomnHills_Candle3_6
+  - first:
+      213: -2664343859516123182
+    second: $AutomnHills_Candle3_7
+  - first:
+      213: 3118958855328491259
+    second: $AutomnHills_Candle3_8
+  - first:
+      213: 7732051805663848571
+    second: $AutomnHills_Candle3_9
+  - first:
+      213: -1256214956439662979
+    second: $AutomnHills_Candle3_10
+  - first:
+      213: -8242267668021625983
+    second: $AutomnHills_Candle3_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +77,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +111,273 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 104
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52da21eadc8c9830800000000000000
+      internalID: 4079290234199265882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 104
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f72c8c4402a2230800000000000000
+      internalID: 3614737130716299084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2796762e806cadd00800000000000000
+      internalID: 998328008876452210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 70
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fce6c4e2f80122f0800000000000000
+      internalID: -999507802986189575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 70
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d8cef353e527c90800000000000000
+      internalID: -7173567673649033845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 70
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a55f0d3955ac0d50800000000000000
+      internalID: 6704915747942913441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459162bf3815f5430800000000000000
+      internalID: 3773824640055908692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_7
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 36
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d75c064069560bd0800000000000000
+      internalID: -2664343859516123182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 36
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6e9e0dd84c84b20800000000000000
+      internalID: 3118958855328491259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78e28da624cd4b60800000000000000
+      internalID: 7732051805663848571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e81ef1727019ee0800000000000000
+      internalID: -1256214956439662979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: $AutomnHills_Candle3_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b32efa9359d9d80800000000000000
+      internalID: -8242267668021625983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

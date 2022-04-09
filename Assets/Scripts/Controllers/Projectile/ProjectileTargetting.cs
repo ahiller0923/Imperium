@@ -36,7 +36,7 @@ public class ProjectileTargetting : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

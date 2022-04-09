@@ -14,6 +14,7 @@ public class MovementComponent : MonoBehaviour
     private Combat combat;
     private SpriteRenderer sprite;
     private AIDestinationSetter destinationSetter;
+    private Stats stats;
 
     private Vector3 lastPos;
 
@@ -28,19 +29,21 @@ public class MovementComponent : MonoBehaviour
         combat = GetComponent<Combat>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         destinationSetter = GetComponent<AIDestinationSetter>();
+        stats = GetComponent<Stats>();
         targetObject = new GameObject();
 
         if (!CompareTag("Player"))
         {
-            speed = Random.Range(speed - .2f, speed + .5f);
+            speed = Random.Range(stats.moveSpeed - .2f, stats.moveSpeed + .5f);
         }
         lastPos = transform.position;
+
+        GetComponent<AIPath>().maxSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Move();
         SetAnimations();
     }
 
@@ -53,13 +56,13 @@ public class MovementComponent : MonoBehaviour
         }
     }
 
-    public void SetAlignment(Vector3 target)
+    public void SetAlignment()
     {
-        if (transform.position.x - target.x < 0)
+        if (targetPosition.x - transform.position.x > 0)
         {
             sprite.flipX = !isFlipped;
         }
-        else
+        else if (targetPosition.x - transform.position.x < 0)
         {
             sprite.flipX = isFlipped;
         }
@@ -73,15 +76,17 @@ public class MovementComponent : MonoBehaviour
      * */
     private void SetAnimations()
     {
-        if(transform.position == lastPos)
+        Vector2 deltaLocation = new Vector2(transform.position.x - lastPos.x, transform.position.y - lastPos.y);
+
+        if(deltaLocation == Vector2.zero)
         {
             TurnOffMovementAnimations();
             isMoving = false;
         }
 
-        else if(Mathf.Abs(transform.position.x - targetPosition.x) > Mathf.Abs(transform.position.y - targetPosition.y)) {
+        else if(Mathf.Abs(deltaLocation.x) > Mathf.Abs(deltaLocation.y)) {
 
-            SetAlignment(targetPosition);
+            SetAlignment();
 
             animator.SetInteger("AnimState", 3);
             isMoving = true;
@@ -90,7 +95,7 @@ public class MovementComponent : MonoBehaviour
         else
         {
             isMoving = true;
-            if (transform.position.y - targetPosition.y < 0)
+            if (deltaLocation.y > 0)
             {
                 animator.SetInteger("AnimState", 1);
             }
@@ -113,15 +118,23 @@ public class MovementComponent : MonoBehaviour
         animator.SetInteger("AnimState", 0);
     }
 
-    public void SetTarget(Vector3 target, bool attack = false)
+    public void SetTarget(Vector3 target, bool moveToAttack = false, bool currentlyAttacking = false)
     {
         targetPosition = target;
         targetPosition.z = 0;
-        targetObject.transform.position = targetPosition;
+
+        if (!currentlyAttacking)
+        {
+            targetObject.transform.position = targetPosition;
+        }
+
+        else
+        {
+            targetObject.transform.position = transform.position;
+        }
 
         destinationSetter.target = targetObject.transform;
-
-        tryAttack = attack;
+        tryAttack = moveToAttack;
     }
 
     public Vector3 GetTarget()

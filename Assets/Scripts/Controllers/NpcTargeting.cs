@@ -15,7 +15,7 @@ public class NpcTargeting : MonoBehaviour
     private float distanceFromPlayer;
 
     public float immersiveMoveTimeLimit = 20;
-    public int randomMove = 1000;
+    public int randomMove = 2000;
     private int moveCheck;
     private float immersiveMoveTime;
 
@@ -72,12 +72,13 @@ public class NpcTargeting : MonoBehaviour
 
     public void SetTarget(GameObject enemy)
     {
-        target = enemy;
+        targets.Enqueue(enemy);
+        NewTarget();
     }
 
     private void CheckAttack()
     {
-        distanceFromPlayer = Vector3.Distance(target.transform.position, transform.position);
+        distanceFromPlayer = Vector2.Distance(target.transform.position, transform.position);
 
         if (distanceFromPlayer < combat.attackRange)
         {
@@ -104,7 +105,7 @@ public class NpcTargeting : MonoBehaviour
 
     private void DocileMovement()
     {
-        if (!movement.isMoving)
+        if (targets.Count == 0 && target == null)
         {
             if (Random.Range(0, moveCheck) == 7)
             {
@@ -120,6 +121,14 @@ public class NpcTargeting : MonoBehaviour
                 moveCheck = moveCheck / 2;
                 immersiveMoveTime = Time.time;
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(!collision.collider.CompareTag("Player"))
+        {
+            Physics2D.IgnoreCollision(gameObject.GetComponent<BoxCollider2D>(), collision.collider);
         }
     }
 }

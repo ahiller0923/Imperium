@@ -21,7 +21,7 @@ public class DealDamage : StateMachineBehaviour
     {
         if(animator.gameObject != null)
         {
-            animator.gameObject.GetComponent<Combat>().DealDamage();
+            animator.gameObject.GetComponentInParent<Combat>().DealDamage();
         }
     }
 

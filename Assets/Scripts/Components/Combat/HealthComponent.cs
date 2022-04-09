@@ -18,7 +18,7 @@ public class HealthComponent : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         stats = GetComponent<Stats>();
         maxHealth = stats.health;
         health = maxHealth;

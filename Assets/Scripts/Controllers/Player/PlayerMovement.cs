@@ -82,8 +82,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void interactWithNpc()
     {
-        movement.SetTarget(transform.position);
-        movement.SetAlignment(hit.transform.position);
+        movement.SetTarget(hit.transform.position, true, true);
+        //movement.SetAlignment(new Vector2(hit.transform.position.x - transform.position.x, hit.transform.position.y - transform.position.y));
         interact.ProcessInteraction(hit);
     }
 }

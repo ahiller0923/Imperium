@@ -25,7 +25,7 @@ public class Combat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         stats = GetComponent<Stats>();
         target = transform.position;
         movement = GetComponent<MovementComponent>();
@@ -36,13 +36,12 @@ public class Combat : MonoBehaviour
     */
     public void RangedAttack(Vector3 hit)
     {
-        if(Vector3.Distance(transform.position, hit) < attackRange)
+        if(Vector2.Distance(transform.position, hit) < attackRange)
         {
             if(Time.time - attackTime > attackDelay)
         {
                 target = hit;
                 PlayAnimation(target);
-                movement.SetTarget(transform.position);
                 attackTime = Time.time;
             }
         }
@@ -55,7 +54,7 @@ public class Combat : MonoBehaviour
 
     public void MeleeAttack(GameObject player)
     {
-        if (Time.time - attackTime > attackDelay)
+        if (Time.time - attackTime > attackDelay && animator != null)
         {
             animator.SetBool("attacking", true);
             PlayAnimation(player.transform.position);
@@ -66,7 +65,7 @@ public class Combat : MonoBehaviour
 
     public void DealDamage()
     {
-        if(Vector3.Distance(targetObject.transform.position, transform.position) < attackRange)
+        if(Vector2.Distance(targetObject.transform.position, transform.position) < attackRange)
         {
             targetObject.GetComponent<HealthComponent>().TakeDamage(stats.CalculatePhysicalDamageDealt(basePhysicalDamage), 0, gameObject);
         }
@@ -102,7 +101,7 @@ public class Combat : MonoBehaviour
     {
         // Create projectile object
         arrow = Instantiate(projectileModel, transform.position, Quaternion.identity);
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), arrow.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), arrow.GetComponent<Collider2D>());
 
         // Set target and damage
         ProjectileTargetting arrowSettings = arrow.GetComponent<ProjectileTargetting>();
