@@ -14,6 +14,7 @@ public class MovementComponent : MonoBehaviour
     private Combat combat;
     private SpriteRenderer sprite;
     private AIDestinationSetter destinationSetter;
+    private AIPath path;
     private Stats stats;
 
     private Vector3 lastPos;
@@ -31,6 +32,7 @@ public class MovementComponent : MonoBehaviour
         destinationSetter = GetComponent<AIDestinationSetter>();
         stats = GetComponent<Stats>();
         targetObject = new GameObject();
+        path = GetComponent<AIPath>();
 
         if (!CompareTag("Player"))
         {
@@ -76,9 +78,8 @@ public class MovementComponent : MonoBehaviour
      * */
     private void SetAnimations()
     {
-        Vector2 deltaLocation = new Vector2(transform.position.x - lastPos.x, transform.position.y - lastPos.y);
-
-        if(deltaLocation == Vector2.zero)
+        Vector2 deltaLocation = new Vector2(path.steeringTarget.x - transform.position.x, path.steeringTarget.y - transform.position.y);
+        if(path.reachedEndOfPath)
         {
             TurnOffMovementAnimations();
             isMoving = false;
@@ -104,7 +105,6 @@ public class MovementComponent : MonoBehaviour
                 animator.SetInteger("AnimState", 2);
             }
         }
-        lastPos = transform.position;
     }
 
     public void TurnOffAnimations()
