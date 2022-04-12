@@ -17,8 +17,6 @@ public class MovementComponent : MonoBehaviour
     private AIPath path;
     private Stats stats;
 
-    private Vector3 lastPos;
-
     public float speed = 1;
 
     public bool isMoving;
@@ -38,7 +36,6 @@ public class MovementComponent : MonoBehaviour
         {
             speed = Random.Range(stats.moveSpeed - .2f, stats.moveSpeed + .5f);
         }
-        lastPos = transform.position;
 
         GetComponent<AIPath>().maxSpeed = speed;
     }
@@ -79,7 +76,7 @@ public class MovementComponent : MonoBehaviour
     private void SetAnimations()
     {
         Vector2 deltaLocation = new Vector2(path.steeringTarget.x - transform.position.x, path.steeringTarget.y - transform.position.y);
-        if(path.reachedEndOfPath)
+        if(path.reachedEndOfPath || float.IsInfinity(path.remainingDistance))
         {
             TurnOffMovementAnimations();
             isMoving = false;

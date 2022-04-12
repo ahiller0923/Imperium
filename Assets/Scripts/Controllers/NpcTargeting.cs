@@ -21,7 +21,9 @@ public class NpcTargeting : MonoBehaviour
 
     public float immersiveMoveDistance;
 
-    public Vector3 villageCenter = new Vector3(15, 5, 0);
+    public bool immersiveMove = true;
+
+    public GameObject villageAnchor;
 
     // Start is called before the first frame update
     void Start()
@@ -105,12 +107,12 @@ public class NpcTargeting : MonoBehaviour
 
     private void DocileMovement()
     {
-        if (targets.Count == 0 && target == null)
+        if (targets.Count == 0 && target == null && immersiveMove)
         {
             if (Random.Range(0, moveCheck) == 7)
             {
-                Vector3 moveLocation = new Vector3(Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageCenter.x,
-                    Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageCenter.y, 0);
+                Vector3 moveLocation = new Vector3(Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageAnchor.transform.position.x,
+                    Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageAnchor.transform.position.y, 0);
                 movement.SetTarget(moveLocation);
                 moveCheck = randomMove;
                 immersiveMoveTime = Time.time;
