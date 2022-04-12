@@ -17,12 +17,15 @@ public class PlayerMovement : MonoBehaviour
     RaycastHit2D hit;
     Vector3 clickPoint;
 
+    private Camera camera;
+
     void Start()
     {
         movement = GetComponent<MovementComponent>();
         interact = GetComponent<PlayerInteraction>();
         GetComponentInChildren<Animator>().SetBool("attackOnce", true);
         abilities = GetComponent<PlayerAbilities>();
+        camera = GetComponentInChildren<Animator>().gameObject.GetComponentInChildren<Camera>();
     }
 
     void Update()
@@ -77,6 +80,19 @@ public class PlayerMovement : MonoBehaviour
         {
             abilities.Blink(clickPoint);
             
+        }
+
+        if(Mouse.current.scroll.ReadValue() != Vector2.zero)
+        {
+            if(Mouse.current.scroll.ReadValue().y < 0 && camera.orthographicSize < 4)
+            {
+                camera.orthographicSize += .2f;
+            }
+
+            else if(Mouse.current.scroll.ReadValue().y > 0 && camera.orthographicSize > 1)
+            {
+                camera.orthographicSize -= .2f;
+            }
         }
     }
 
