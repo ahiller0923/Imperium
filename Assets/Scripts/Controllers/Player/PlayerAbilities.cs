@@ -20,7 +20,7 @@ public class PlayerAbilities : MonoBehaviour
     public void Start()
     {
         currentBlinkCharges = blinkChargesMax;
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         movement = GetComponent<MovementComponent>();
     }
 

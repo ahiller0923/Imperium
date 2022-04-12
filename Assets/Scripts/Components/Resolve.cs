@@ -24,28 +24,30 @@ public class Resolve : MonoBehaviour
 
     private void Update()
     {
-
-        if(CheckAlignment().Count == 0 && !isEnemy)
+        if (targetting.target == null)
         {
-            targetting.enabled = false;
-            combat.enabled = false;
-            tag = "NPC";
-        }
-
-        else
-        {
-            targetting.enabled = true;
-            combat.enabled = true;
-            targetting.LoadTargets(CheckAlignment());
-
-            if(isEnemy)
+            if (CheckAlignment().Count == 0 && !isEnemy)
             {
-                tag = "Enemy";
+                //targetting.enabled = false;
+                combat.enabled = false;
+                tag = "NPC";
             }
-            
+
             else
             {
-                tag = "NPC";
+                targetting.enabled = true;
+                combat.enabled = true;
+                targetting.LoadTargets(CheckAlignment());
+
+                if (isEnemy)
+                {
+                    tag = "Enemy";
+                }
+
+                else
+                {
+                    tag = "NPC";
+                }
             }
         }
     }

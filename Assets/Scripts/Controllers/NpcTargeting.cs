@@ -13,23 +13,38 @@ public class NpcTargeting : MonoBehaviour
     public bool isRanged;
 
     private float distanceFromPlayer;
+
+    public float immersiveMoveTimeLimit = 20;
+    public int randomMove = 2000;
+    private int moveCheck;
+    private float immersiveMoveTime;
+
+    public float immersiveMoveDistance;
+
+    public bool immersiveMove = true;
+
+    public GameObject villageAnchor;
+
     // Start is called before the first frame update
     void Start()
     {
         combat = GetComponent<Combat>();
         movement = GetComponent<MovementComponent>();
         targets = new Queue<GameObject>();
+        moveCheck = randomMove;
+        immersiveMoveTime = Time.time;
+        immersiveMoveDistance = 5;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(target == null && targets.Count > 0)
+        if(target == null)
         {
             NewTarget();
         }
 
-        if(target != null)
+        else
         {
             CheckAttack();
         }
@@ -51,16 +66,21 @@ public class NpcTargeting : MonoBehaviour
             target = targets.Dequeue();
         }
         
+        else
+        {
+            DocileMovement();
+        }
     }
 
     public void SetTarget(GameObject enemy)
     {
-        target = enemy;
+        targets.Enqueue(enemy);
+        NewTarget();
     }
 
     private void CheckAttack()
     {
-        distanceFromPlayer = Vector3.Distance(target.transform.position, transform.position);
+        distanceFromPlayer = Vector2.Distance(target.transform.position, transform.position);
 
         if (distanceFromPlayer < combat.attackRange)
         {
@@ -82,6 +102,35 @@ public class NpcTargeting : MonoBehaviour
         else
         {
             NewTarget();
+        }
+    }
+
+    private void DocileMovement()
+    {
+        if (targets.Count == 0 && target == null && immersiveMove)
+        {
+            if (Random.Range(0, moveCheck) == 7)
+            {
+                Vector3 moveLocation = new Vector3(Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageAnchor.transform.position.x,
+                    Random.Range(-immersiveMoveDistance, immersiveMoveDistance) + villageAnchor.transform.position.y, 0);
+                movement.SetTarget(moveLocation);
+                moveCheck = randomMove;
+                immersiveMoveTime = Time.time;
+            }
+
+            else if (Time.time - immersiveMoveTime >= immersiveMoveTimeLimit)
+            {
+                moveCheck = moveCheck / 2;
+                immersiveMoveTime = Time.time;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(!collision.collider.CompareTag("Player"))
+        {
+            Physics2D.IgnoreCollision(gameObject.GetComponent<BoxCollider2D>(), collision.collider);
         }
     }
 }

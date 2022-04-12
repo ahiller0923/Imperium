@@ -11,7 +11,6 @@ public class DialogueComponent : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<NpcTargeting>().enabled = false;
         gameObject.GetComponent<Combat>().enabled = false;
     }
 

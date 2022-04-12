@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = GetComponent<MovementComponent>();
         interact = GetComponent<PlayerInteraction>();
-        GetComponent<Animator>().SetBool("attackOnce", true);
+        GetComponentInChildren<Animator>().SetBool("attackOnce", true);
         abilities = GetComponent<PlayerAbilities>();
     }
 
@@ -82,8 +82,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void interactWithNpc()
     {
-        movement.SetTarget(transform.position);
-        movement.SetAlignment(hit.transform.position);
+        movement.SetTarget(hit.transform.position, true, true);
+        //movement.SetAlignment(new Vector2(hit.transform.position.x - transform.position.x, hit.transform.position.y - transform.position.y));
         interact.ProcessInteraction(hit);
     }
 }

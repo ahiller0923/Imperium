@@ -1,34 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class MovementComponent : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 targetPosition;
+    private GameObject targetObject;
     private Animator animator;
     public bool isFlipped;
     private bool tryAttack = false;
     private Combat combat;
+    private SpriteRenderer sprite;
+    private AIDestinationSetter destinationSetter;
+    private AIPath path;
+    private Stats stats;
 
     public float speed = 1;
 
+    public bool isMoving;
+
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         targetPosition = transform.position;
         combat = GetComponent<Combat>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        destinationSetter = GetComponent<AIDestinationSetter>();
+        stats = GetComponent<Stats>();
+        targetObject = new GameObject();
+        path = GetComponent<AIPath>();
 
-        if(!CompareTag("Player"))
+        if (!CompareTag("Player"))
         {
-            speed = Random.Range(speed - .2f, speed + .5f);
+            speed = Random.Range(stats.moveSpeed - .2f, stats.moveSpeed + .5f);
         }
+
+        GetComponent<AIPath>().maxSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
         SetAnimations();
     }
 
@@ -41,15 +55,15 @@ public class MovementComponent : MonoBehaviour
         }
     }
 
-    public void SetAlignment(Vector3 target)
+    public void SetAlignment()
     {
-        if (transform.position.x - target.x < 0)
+        if (targetPosition.x - transform.position.x > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = !isFlipped;
+            sprite.flipX = !isFlipped;
         }
-        else
+        else if (targetPosition.x - transform.position.x < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = isFlipped;
+            sprite.flipX = isFlipped;
         }
     }
 
@@ -61,22 +75,25 @@ public class MovementComponent : MonoBehaviour
      * */
     private void SetAnimations()
     {
-        if(transform.position == targetPosition)
+        Vector2 deltaLocation = new Vector2(path.steeringTarget.x - transform.position.x, path.steeringTarget.y - transform.position.y);
+        if(path.reachedEndOfPath || float.IsInfinity(path.remainingDistance))
         {
             TurnOffMovementAnimations();
+            isMoving = false;
         }
 
-        else if(Mathf.Abs(transform.position.x - targetPosition.x) > Mathf.Abs(transform.position.y - targetPosition.y)) {
+        else if(Mathf.Abs(deltaLocation.x) > Mathf.Abs(deltaLocation.y)) {
 
-            SetAlignment(targetPosition);
+            SetAlignment();
 
             animator.SetInteger("AnimState", 3);
+            isMoving = true;
         }
 
         else
         {
-
-            if (transform.position.y - targetPosition.y < 0)
+            isMoving = true;
+            if (deltaLocation.y > 0)
             {
                 animator.SetInteger("AnimState", 1);
             }
@@ -98,12 +115,23 @@ public class MovementComponent : MonoBehaviour
         animator.SetInteger("AnimState", 0);
     }
 
-    public void SetTarget(Vector3 target, bool attack = false)
+    public void SetTarget(Vector3 target, bool moveToAttack = false, bool currentlyAttacking = false)
     {
         targetPosition = target;
         targetPosition.z = 0;
 
-        tryAttack = attack;
+        if (!currentlyAttacking)
+        {
+            targetObject.transform.position = targetPosition;
+        }
+
+        else
+        {
+            targetObject.transform.position = transform.position;
+        }
+
+        destinationSetter.target = targetObject.transform;
+        tryAttack = moveToAttack;
     }
 
     public Vector3 GetTarget()
