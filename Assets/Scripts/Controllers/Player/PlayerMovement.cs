@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                if (hit.collider == null || (!hit.collider.CompareTag("Enemy") && !hit.collider.CompareTag("NPC")))
+                if (hit.collider == null || (!hit.collider.CompareTag("Enemy") && !hit.collider.CompareTag("NPC") && !hit.collider.CompareTag("Gargoyle")))
                 {
                     DialogueManager.GetInstance().ExitDialogueMode();
                     movement.SetTarget(clickPoint);
@@ -69,12 +69,19 @@ public class PlayerMovement : MonoBehaviour
                     interactWithNpc();
                 }
             }
-        }   
+        }
 
         else
         {
             Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
         }
+
+        if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+        {
+            Cursor.SetCursor(attackCursor, Vector2.zero, CursorMode.Auto);
+        }
+
+        
 
         if (Keyboard.current.eKey.isPressed)
         {

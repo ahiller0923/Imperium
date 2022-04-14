@@ -11,7 +11,15 @@ public class DialogueComponent : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<Combat>().enabled = false;
+        if(TryGetComponent<Combat>(out Combat combat))
+        {
+            combat.enabled = false;
+        }
+
+        if(inkJSON == null)
+        {
+            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
     public void TriggerDialogue()
@@ -19,6 +27,7 @@ public class DialogueComponent : MonoBehaviour
         if(inkJSON != null)
         {
             DialogueManager.GetInstance().EnterDialogueMode(gameObject);
+            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

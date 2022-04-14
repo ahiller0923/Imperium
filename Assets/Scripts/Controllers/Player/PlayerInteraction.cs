@@ -7,6 +7,10 @@ public class PlayerInteraction : MonoBehaviour
     private Combat combat;
     private PlayerDialogue dialogue;
 
+    public GameObject grass;
+    public GameObject trees;
+    public GameObject music;
+
     void Start()
     {
         combat = GetComponent<Combat>();
@@ -30,5 +34,24 @@ public class PlayerInteraction : MonoBehaviour
         {
             dialogue.InitiateDialogue(hit);
         }
+        else if(hit.collider.CompareTag("Gargoyle")) {
+            InitiateEvilMode();
+        }
+    }
+
+    public void InitiateEvilMode()
+    {
+        foreach (SpriteRenderer tile in grass.GetComponentsInChildren<SpriteRenderer>()) {
+            tile.color = new Color32(111, 7, 0, 255);
+        }
+
+        foreach (SpriteRenderer tree in trees.GetComponentsInChildren<SpriteRenderer>())
+        {
+            tree.color = new Color32(111, 7, 0, 255);
+        }
+
+        GetComponentInChildren<SpriteRenderer>().color = new Color32(0, 0, 0, 255);
+        GetComponent<Stats>().resolve = -1000;
+        music.GetComponent<Music>().PlayNewMusic();
     }
 }

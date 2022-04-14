@@ -101,14 +101,14 @@ public class Stats : MonoBehaviour
 
     private void SetResolveSymbol()
     {
-        if(resolve > 55)
+        if(resolve >= 55)
         {
             redImg.gameObject.SetActive(true);
             blueImg.gameObject.SetActive(false);
             scaleFactor = resolve * .01f;
             redImg.rectTransform.localScale = scaleFactor * Vector3.one;
         }
-        else if(resolve < 45)
+        else if(resolve <= 45 && resolve > -500)
         {
             blueImg.gameObject.SetActive(true);
             redImg.gameObject.SetActive(false);

@@ -31,6 +31,8 @@ public class DialogueManager : MonoBehaviour
 
     private float resolveEffect = 0;
 
+    private bool malum = false;
+
     private void Awake()
     {
         if(instance != null)
@@ -73,6 +75,17 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
         dialoguePanel.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = caller.GetComponent<DialogueComponent>().name;
 
+        if(caller.GetComponent<DialogueComponent>().name == "Malum")
+        {
+            malum = true;
+        }
+
+        else
+        {
+            malum = false;
+        }
+
+        dialoguePanel.GetComponentInChildren<EvilEffect>().SetEffect(malum);
         ContinueStory();
     }
 
@@ -147,23 +160,34 @@ public class DialogueManager : MonoBehaviour
     {
         if(currentStory != null)
         {
-            resolveEffect = float.Parse(currentStory.variablesState.GetVariableWithName("resolve").ToString());
-            if(NPC.GetComponent<Stats>().resolve == 100)
+            if (malum == false)
             {
-                stats.resolve += resolveEffect;
-            }
-            
-            else if(NPC.GetComponent<Stats>().resolve == 0)
-            {
-                stats.resolve -= resolveEffect;
+                resolveEffect = float.Parse(currentStory.variablesState.GetVariableWithName("resolve").ToString());
+                if (NPC.GetComponent<Stats>().resolve == 100)
+                {
+                    stats.resolve += resolveEffect;
+                }
+
+                else if (NPC.GetComponent<Stats>().resolve == 0)
+                {
+                    stats.resolve -= resolveEffect;
+                }
+
+                if (currentStory.variablesState.GetVariableWithName("agro").ToString() == "true")
+                {
+                    NPC.GetComponent<NpcTargeting>().SetTarget(player);
+                    NPC.tag = "Enemy";
+                    NPC.GetComponent<Resolve>().isEnemy = true;
+                    ExitDialogueMode();
+                }
             }
 
-            if(currentStory.variablesState.GetVariableWithName("agro").ToString() == "true")
+            else
             {
-                NPC.GetComponent<NpcTargeting>().SetTarget(player);
-                NPC.tag = "Enemy";
-                NPC.GetComponent<Resolve>().isEnemy = true;
-                ExitDialogueMode();
+                if(currentStory.variablesState.GetVariableWithName("evil").ToString() == "true")
+                {
+                    player.GetComponent<PlayerInteraction>().InitiateEvilMode();
+                }
             }
         }
     }
